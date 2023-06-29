@@ -1,12 +1,14 @@
-
-
 import openpyxl as xl
 
 from openpyxl.chart import Reference, PieChart
 
+
 #kitchen
 
+
 #foya kitchen
+
+
 def foyakitchen(filename='Drop/kitchens/foyakitchen.xlsx'):
     sum_total = 0
     
@@ -42,7 +44,7 @@ def foyakitchen(filename='Drop/kitchens/foyakitchen.xlsx'):
         closing_stock = total - sold.value
         c_stock.value = closing_stock
     
-    #tea    
+    #tea
     for row in range(14, 17+1):
         # items = sheet.cell(row, 2)
         # print(items.value)
@@ -248,8 +250,9 @@ def foyakitchen(filename='Drop/kitchens/foyakitchen.xlsx'):
         c_stock = sheet.cell(row, 11)    
         closing_stock = total - sold.value
         c_stock.value = closing_stock
-        
-        
+
+
+
     for row in range(58, 58+1 ):
         # items = sheet.cell(row, 2)
         # print(items.value)
